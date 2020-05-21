@@ -29,7 +29,6 @@ const Center = styled.div`
   align-items: center;
   align-content: stretch;
   margin: 1rem;
-  color: ##c6ceda;
 `;
 const App = () => {
   const [value, setValue] = useState('');
