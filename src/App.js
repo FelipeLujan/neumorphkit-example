@@ -6,7 +6,7 @@ import {
   Surface,
   Textinput,
   Radio,
-} from 'spring-button-test';
+} from 'neumorphkit';
 import styled from 'styled-components';
 
 import './App.css';
