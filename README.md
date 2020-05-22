@@ -1,6 +1,5 @@
 Deployed here Check out this [DEMO](https://neu.felipelujan.com).
 
 <p align="center">
-  <h1>Neumorphic demo</h1>
-  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+  <img width="460" height="300" src="https://github.com/FelipeLujan/neumorphkit-example/blob/master/src/assets/android-chrome-192x192.png">
 </p>
