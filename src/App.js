@@ -32,8 +32,8 @@ const Center = styled.div`
   margin: 1rem;
 `;
 const App = () => {
-  const [value, setValue] = useState('1 Check');
-  const [checks, setChecks] = useState(['Option A']);
+  const [value, setValue] = useState('Option B');
+  const [checks, setChecks] = useState([]);
   const [radio, setRadio] = useState(undefined);
   const [copied, setCopied] = useState(false);
   const items = ['1 Check', '2 Check', '3 Check'];
