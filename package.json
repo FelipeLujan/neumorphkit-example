@@ -8,12 +8,14 @@
     "@testing-library/user-event": "^7.1.2",
     "neumorphkit": "^1.1.0",
     "react": "^16.13.1",
+    "react-copy-to-clipboard": "^5.0.2",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "spring-button-test": "^1.0.24"
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:ENV": " cross-env WALLET=3ATbMwAzJg2DDLTJA4oun7SsEvUXceikYs npm start    ",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -8,6 +8,7 @@ import {
   Radio,
 } from 'neumorphkit';
 import styled from 'styled-components';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 import './App.css';
 import Coffee from './coffee/Coffee';
@@ -31,10 +32,10 @@ const Center = styled.div`
   margin: 1rem;
 `;
 const App = () => {
-  const [value, setValue] = useState('');
-  const [checks, setChecks] = useState([]);
+  const [value, setValue] = useState('1 Check');
+  const [checks, setChecks] = useState(['Option A']);
   const [radio, setRadio] = useState(undefined);
-
+  const [copied, setCopied] = useState(false);
   const items = ['1 Check', '2 Check', '3 Check'];
   const list = ['Option A', 'Option B', 'Option C'];
 
@@ -62,6 +63,11 @@ const App = () => {
       <Surface width={550}>
         <Center>
           <h1>Neumorphkit</h1>
+          <h2>
+            A set of react components inspired on neumorphic design and animated
+            with react-spring{' '}
+            <a href="https://www.npmjs.com/package/neumorphkit">NPM</a>
+          </h2>
         </Center>
         <Center>
           <Button>Click me</Button>
@@ -109,6 +115,25 @@ const App = () => {
           ))}
         </Center>
         <hr></hr>
+        <Center>
+          <span>
+            <strong>Donate</strong>
+          </span>
+        </Center>
+        <Center>
+          <span>{'3ATbMwAzJg2DDLTJA4oun7SsEvUXceikYs'}</span>
+          {'   '}
+          <CopyToClipboard
+            text={'3ATbMwAzJg2DDLTJA4oun7SsEvUXceikYs'}
+            onCopy={() => setCopied(true)}
+          >
+            {/* <div style={{ transform: 'scale(0.7)' }}> */}
+            <span style={{ 'margin-left': '1rem', cursor: 'pointer' }}>
+              <strong>{copied ? 'Copied' : 'Copy'}</strong>
+            </span>
+            {/* </div> */}
+          </CopyToClipboard>
+        </Center>
         <Center>
           <Coffee></Coffee>
         </Center>
